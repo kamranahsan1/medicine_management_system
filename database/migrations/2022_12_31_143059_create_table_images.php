@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableDisease extends Migration
+class CreateTableImages extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateTableDisease extends Migration
      */
     public function up()
     {
-        Schema::table('disease', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->text('description');
-            $table->text('medication');
-            $table->timestamps();
+        Schema::table('images', function (Blueprint $table) {
+            //
         });
     }
 
@@ -29,7 +25,7 @@ class CreateTableDisease extends Migration
      */
     public function down()
     {
-        Schema::table('disease', function (Blueprint $table) {
+        Schema::table('images', function (Blueprint $table) {
             //
         });
     }
